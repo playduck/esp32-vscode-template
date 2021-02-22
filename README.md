@@ -1,1 +1,1 @@
-# esp32-vsc
+# esp32-vscode-template
