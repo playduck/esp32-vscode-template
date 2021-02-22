@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "./include/definitions.h"
 
 void app_main(void)
