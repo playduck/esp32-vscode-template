@@ -6,6 +6,6 @@ if [ -z "$1" -a "$1" != " " ]; then
     exit 1
 fi
 
-sed -i 's/project\((.*)\)$/project('${1}')/g' "CMakeLists.txt"
-sed -i 's/PROJECT_NAME\ :=.*$/PROJECT_NAME := '${1}'/g' "Makefile"
-sed -i '1 s/^# .*/# '${1}'/g' "README.md"
+sed -i -e 's/project\((.*)\)$/project('${1}')/g' "CMakeLists.txt"  > /dev/null
+sed -i -e 's/PROJECT_NAME\ :=.*$/PROJECT_NAME := '${1}'/g' "Makefile"  > /dev/null
+sed -i -e '1 s/^# .*/# '${1}'/g' "README.md" > /dev/null
