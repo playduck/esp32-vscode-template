@@ -6,7 +6,7 @@ void app_main()
 
     volatile uint32_t i = 0;
     while (1)   {
-        ESP_LOGI("Timer: %d", i++);
+        ESP_LOGI("ESP32", "Timer: %d", i++);
         vTaskDelay(1000 / portTICK_RATE_MS);
     }
 }
